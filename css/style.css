@@ -8,6 +8,68 @@ body,
   padding: 0;
   margin: 0;
 }
+
+
+.home{
+  background: url(font/png/home.png) left top no-repeat;
+}
+
+/*
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 90px;
+  width: 800px;
+  z-index: 15;
+  background: #292929;
+  display: inline-block;
+  height: 80px;
+  position: absolute;
+*/
+
+.banner {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #292929;
+  display: inline-block;
+  margin-left: 81px;
+  /*height: 100vh;*/
+  width: 100%;
+  height: 63px;
+  z-index: 7;
+  position: absolute;
+}
+.banner li {
+  cursor: pointer;
+  border-top: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+  margin-bottom: -1px;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+}
+.banner li div,
+.banner li i {
+  position: absolute;
+  text-align: center;
+  animation-duration: 0.34s;
+}
+.banner li div {
+  margin-left: 80px;
+  text-align: center;
+  width: 90%;
+}
+.banner li i {
+  line-height: 60px;
+  width: 80px;
+  z-index: 7;
+  background: #292929;
+}
+/**************************/
 .nav {
   list-style: none;
   padding: 0;
@@ -43,12 +105,12 @@ body,
 .nav li i {
   line-height: 60px;
   width: 80px;
-  z-index: 9;
+  z-index: 20;
   background: #292929;
 }
 .nav li div {
   display: none;
-  z-index: 1;
+  z-index: 15;
   background: #009fe3bf;
 }
 
@@ -62,9 +124,11 @@ body,
 .hero {
   height: 50vh;
   text-align: center;
-  padding-top: 1%;
+  padding-top: 65px;
   font-family: "Roboto Slab", serif;
   font-size: 28px;
+  /*margin-top: 70x;*/
+  /*position: absolute;*/
 }
 .credits {
   position: absolute;
@@ -77,6 +141,7 @@ body,
 }
  #contenedor_padre p{
   margin-left: 100px;
+  margin-top: 100px;
   text-align:justify;
   margin-right: 20px;
   font-size:16px;
