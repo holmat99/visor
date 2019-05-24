@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Analítica IDECA</title>
+  
+  
+  <link rel='stylesheet' href='https://daneden.github.io/animate.css/animate.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <!--<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>-->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  
+</head>
+
+<body>
+
+  <ul class="nav">
+  <li id="proyecto">
+    <i class="fa fa-home"></i>
+    <div class="animated slideInLeft">Proyecto</div>
+  </li>
+  <li id="analitica">
+    <i class="fa fa-child"></i>
+    <div class="animated slideInLeft">Analítica</div>
+  </li>
+  <li id="as-is">
+    <i class="fa fa-search"></i>
+    <div class="animated slideInLeft">AS IS</div>
+  </li>
+  <li id="to-be">
+    <i class="fa fa-trophy"></i>
+    <div class="animated slideInLeft">TO BE</div>
+  </li>
+  <li id="iniciativas">
+    <i class="fa fa-tasks"></i>
+    <div class="animated slideInLeft">Iniciativas</div>
+  </li>
+  <li id="metodologia">
+    <i class="fa fa-cogs"></i>
+    <div class="animated slideInLeft">Metodología</div>
+  </li>
+  <li id="prototipos">
+    <i class="fa fa-bar-chart"></i>
+    <div class="animated slideInLeft">Prototipos</div>
+  </li>
+</ul>
+
+<div class="hero" id="contenedor_padre">
+    <div id="uno">
+      <h2>Proyecto de Analítica IDECA</h1>
+        <br>
+        <br>
+        <p> El proyecto " Gobierno, arquitectura y analítica para la integración, armonización y escalabilidad de la información geográfica mediante técnicas de analítica de datos”, se constituye en una solución tecnológica que facilitará la integración, armonización, conectividad y escalabilidad de múltiples fuentes de datos urbanos y rurales, permitiendo potencializar y añadir valor a los diferentes productos y servicios de IDECA para la ciudad. Este proyecto es una primera iteración, es decir, que abre el camino hacia una completa adaptación de la IDECA a una cultura analítica, por lo tanto, los ejercicios posteriores deberán continuar con la construcción de la arquitectura de información y con la generación de modelos de analítica. 
+          
+          A su vez se pretende sentar las bases y continuar con la preparación de la IDECA para incursionar de manera escalable y ordenada en los actuales desafíos que tienen las ciudades modernas como Bogotá, en iniciativas como la analítica, big data, internet de las cosas, computación en la nube y otras, en donde se requieren capacidades en la generación de valor a través del adecuado gobierno, arquitectura y gestión de la información durante su ciclo de vida. </p>    
+          <br>
+          <a href="https://catastrobogotacol.sharepoint.com/:p:/s/ProyectoAnalticaIDECA/ESn5W-W6giNBmTe4CnlTWt4BidkNbkqmvp4LZSv2gPai8w?e=XGkJGvv"   target="_blank">Ver presentación</a>
+    </div>
+
+    <div id="dos" style="font-size:16px;">
+
+      <p>La analítica combina las matemáticas y estadística con el uso de programas de software e infraestructura de computación con el fin de derivar conocimiento del negocio a partir de los datos.  La analítica se puede dividir en cuatro tipos: Descriptiva, diagnóstica, predictiva y prescriptiva.  
+
+          La analítica descriptiva se enfoca en descubrir algo que ya ha ocurrido y de sugerir sus posibles causas. Por lo general involucra información histórica, reportes, consultas básicas y visualización. Es la forma más común de analítica y es el recurso provisto generalmente por las herramientas tradicionales de Business Intelligence. 
+          
+          La analítica diagnóstica responde preguntas sobre el “por qué” ocurrió un evento. Usualmente requiere de grandes volúmenes de información para la búsqueda de patrones.  
+          
+          La analítica predictiva y prescriptiva utilizan modelos complejos y grandes volúmenes de datos para predecir la ocurrencia de eventos y sugerir las mejores acciones a tomar a partir de los resultados de las predicciones.  </p>
+    </div>
+
+    <div id="tres" style="font-size:16px;">
+        <br> Pendiente <br>
+     </div>
+  
+    <div id="cuatro" style="font-size:16px;">
+       <br> <br>
+       <img src="img/Vista general ARA v1.3.jpg"></a>
+    </div>
+
+    <div id="cinco" style="font-size:16px;">
+        <br> Pendiente <br>
+     </div>
+  
+    <div id="seis" style="font-size:16px;">
+       <br> <br>
+       <img src="img/Metodología para Analítica en IDECA.png" width="70%"></a>
+    </div>
+
+    <div id="siete" style="font-size:16px;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOWE0YzU0YjgtMmExMS00NWY5LWI3YmYtY2VhMDI0NjJhYjYyIiwidCI6IjI1YTUxOTM3LTZiYmQtNDY5ZC05ZTI1LWQ1M2NiYjRiZjNhMiIsImMiOjR9" name="SubHtml2" width="1600" height="900" scrolling="auto" frameborder="1">
+          <p>Este navegador no soporta los iframes.</p>
+        </iframe>
+      </div>
+    </div>
+    
+    
+  </body>
+    
+    
+    <script src='https://use.fontawesome.com/cece742d74.js'></script>
+  <script>
+
+    function cargarPagina(pagina){
+
+      $("#contenedor_padre").children().hide();
+      switch (pagina){
+        case "proyecto":
+          $('#uno').show(); 
+          break;
+        case "analitica":
+           $('#dos').show();  
+           break;
+        case "as-is":
+           $('#tres').show();
+           break;
+        case "to-be":
+           $('#cuatro').show();
+           break;
+        case "iniciativas":
+           $('#cinco').show();
+           break;
+        case "metodologia":
+           $('#seis').show();
+           break;
+        case "prototipos":
+           $('#siete').show();
+           break;                
+      }
+    }
+    
+    $(function() {
+      $("#contenedor_padre").children().hide();
+      $("li").on("click",function() {
+            //alert('hola analitica');
+            cargarPagina(this.id);
+      });
+    });
+
+        
+  </script>
+  
+</html>
